@@ -1,4 +1,8 @@
 import requests
+import logging
+
+# Configure logging
+logging.basicConfig(filename='test_log.log', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 def test_frontend_backend_integration():
     # URL of the frontend service
@@ -11,17 +15,17 @@ def test_frontend_backend_integration():
         # Make a request to the frontend service
         response = requests.get(frontend_url)
         
-        # Print status code and response text for debugging
-        print(f"Status Code: {response.status_code}")
-        print(f"Response Text: {response.text}")
+        # Log status code and response text for debugging
+        logging.info(f"Status Code: {response.status_code}")
+        logging.info(f"Response Text: {response.text}")
 
         # Check if the response contains the expected message
         assert expected_message in response.text, "Test failed: Expected message not found!"
-        
-        print("Test passed: Frontend displays the correct message from the backend.")
+        logging.info("Test passed: Frontend displays the correct message from the backend.")
+
         
     except Exception as e:
-        print(f"Test failed: {e}")
+        logging.error(f"Test failed: {e}")
 
 if __name__ == "__main__":
     test_frontend_backend_integration()
