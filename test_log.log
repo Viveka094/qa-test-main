@@ -1,6 +1,3 @@
-2024-09-06 17:51:28,440 - INFO - Status Code: 200
-2024-09-06 17:51:28,441 - INFO - Response Text: <h1>Hello from the Backend!</h1>
-2024-09-06 17:51:28,441 - INFO - Test passed: Frontend displays the correct message from the backend.
-2024-09-06 17:53:27,477 - INFO - Status Code: 200
-2024-09-06 17:53:27,478 - INFO - Response Text: <h1>Hello from the Backend!</h1>
-2024-09-06 17:53:27,478 - INFO - Test passed: Frontend displays the correct message from the backend.
+2024-09-06 18:30:50,340 - INFO - Status Code: 200
+2024-09-06 18:30:50,341 - INFO - Response Text: <h1>Hello from the Backend!</h1>
+2024-09-06 18:30:50,341 - INFO - Test passed: Frontend displays the correct message from the backend.

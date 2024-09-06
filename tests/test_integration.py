@@ -6,7 +6,7 @@ logging.basicConfig(filename='test_log.log', level=logging.INFO, format='%(ascti
 
 def test_frontend_backend_integration():
     # URL of the frontend service
-    frontend_url = 'http://localhost:8081'
+    frontend_url = 'http://localhost:8080'
     
     # Expected message from the backend
     expected_message = 'Hello from the Backend!'
